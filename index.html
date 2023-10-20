@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@500&display=swap");
+    </style>
+
+    <title>Weather_Forecasting</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather Forecasting</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="search-input">
+          <input type="text" id="location" placeholder="Enter your place" />
+          <input type="button" value="search" id="search-button" />
+        </div>
+        <div id="location-display"></div>
+        <div id="loading-spinner" class="spinner"></div>
+        <div id="error-message"></div>
+
+        <div class="days" id="weather-info">
+          <div class="day">
+            <h3>Date 🌦️🌦️</h3>
+            <h4>Day</h4>
+            <h4>Max - Min</h4>
+            <p class="speed">Max wind speed</p>
+            <p class="precipitation">Humidity</p>
+            <h3 class="condition">Pressure</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
