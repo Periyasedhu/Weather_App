@@ -35,7 +35,7 @@ searchBtn.addEventListener("click", function () {
 
   // Make an API request to fetch weather data
   fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=f5f18c7250514dc481555511231310&q=${locationInput}&days=7&aqi=no&alerts=no`
+    `http://api.weatherapi.com/v1/forecast.json?key=${KEY}=${locationInput}&days=7&aqi=no&alerts=no`
   )
     .then((response) => response.json())
     .then((data) => {
